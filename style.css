@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+*{
+ margin: 0px;
+}
+
+body{
+    
+    font-family:'Lato' ;
+    
+}
+h1{
+    font-family:'Roboto Mono';
+}
+
+header{
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.431) ;
+    background-color: #d1d0d0;
+    box-shadow: -2px 3px 8px rgba(0, 0, 0, 0.349);
+    
+}
+header img{
+    width: 40px;
+    position: relative;
+    left: 50px;
+    
+
+    
+}
+header nav {
+    margin: auto;
+}
+header nav a{
+    color: rgb(10, 8, 8);
+    text-decoration: none;
+    margin-right: 30px;
+    padding: 5px;
+}
+header nav a:hover{
+    background-color: rgba(255, 255, 255, 0.993);
+}
+main{
+    background-image: url('img/17580.jpg');
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    height: 550px;
+    align-items: center;
+    
+
+}
+main .conteudo{
+    flex: 1;
+    text-align: center;
+    padding:10px;
+    border-radius: 10px;
+    
+   
+    
+}
+main .conteudo h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #EB4868;
+
+}
+main .conteudo p {
+    width: 350px;
+    margin:auto;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+main .conteudo a{
+     display: block;
+    color:rgb(255, 255, 255);
+    background-color:#FB235E;
+    font-weight: bold;
+    padding: 15px;
+    width: 300px;
+    position: relative;
+    bottom: 20px;
+    text-decoration: none;
+    
+    font-size: 18px;
+    
+   
+   
+}
+
+main .produto{
+        flex: 2;
+        
+}
+main .produto img{
+    width: 100%;
+    
+   
+   
+}
+main .produto p{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    color:#ffd700;
+}
+main .funcao{
+    position: relative;
+    top: 20px;
+    justify-items: center;
+    flex-wrap: wrap;
+    color:#7CBE50;
+    border: 2px solid #3C3C3C;
+    flex: 1;
+    
+}
+main .funcao img{
+   width: 80px;
+   margin: 30px;
+  
+}
+main .funcao h1 {
+    
+    font-size: 2.5em;
+    text-align: center;
+}
+main .icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+section{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    height: 300px;
+    color: white;
+}
+section div{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align:center;
+    background-image:url('/img/17580.jpg') ;
+    background-size: cover;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    justify-items: center;
+}
+section div h1{
+    color: #131212;
+}
+section div p{
+    margin-top: 40px;
+    color:#3C3C3C;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+footer{
+    
+    background-color: rgb(0, 0, 0);
+    color:white;
+    text-align: center;
+    padding: 8px;
+}
