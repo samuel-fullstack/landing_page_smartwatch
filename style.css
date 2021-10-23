@@ -148,6 +148,7 @@ main .funcao img{
 
 section{
     display: flex;
+    flex-wrap: wrap;
     padding: 20px;
     color: white;
     background-image:url('/img/551467.png') ;
@@ -167,6 +168,12 @@ section div{
 section div h1{
     color: #9c8f8f;
     font-size: 1.2em;
+    transition-duration: 0.1s;
+}
+section div h1:hover{
+    color: #d3cccc;
+    text-shadow: 1px 1px 5px;
+
 }
 section div p{
     margin-top: 40px;
@@ -192,7 +199,8 @@ footer{
         flex-direction: column;
         
     }
-    main div{
+    main img{
+        min-width:20px;
         
     }
 }
