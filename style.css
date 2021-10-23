@@ -7,6 +7,7 @@
 body{
     
     font-family:'Lato' ;
+    font-size: 17px;
     
 }
 h1{
@@ -21,18 +22,35 @@ header{
     box-shadow: -2px 3px 8px rgba(0, 0, 0, 0.349);
     
 }
+header .han{ 
+    
+    display:none
+}
+header .han>div{
+    background-color: #1E1E1E;
+    width: 40px;
+    height: 5px;
+    margin: 3px;
+    
+    border-radius: 5px;
+}
 header img{
     width: 40px;
-    position: relative;
-    left: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+   
     
 
     
 }
 header nav {
+    margin-left: 40px;
     margin: auto;
+
 }
 header nav a{
+    font-size: 0.8em;
     color: rgb(10, 8, 8);
     text-decoration: none;
     margin-right: 30px;
@@ -44,38 +62,47 @@ header nav a:hover{
 main{
     background-image: url('img/17580.jpg');
     background-size: cover;
-    padding: 20px;
     display: flex;
-    height: 550px;
     align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
     
 
 }
+main div {
+    margin: 10px;
+    
+}
 main .conteudo{
+    
     flex: 1;
     text-align: center;
     padding:10px;
     border-radius: 10px;
+    min-width: 350px;
     
    
     
 }
 main .conteudo h1{
+  
     text-align: center;
     margin-bottom: 20px;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #EB4868;
 
 }
 main .conteudo p {
-    width: 350px;
+  
     margin:auto;
-    font-size: 18px;
+    font-size: 1em;
+   
     text-align: justify;
-    margin-bottom: 40px;
+    max-width: 350px;
+    margin-bottom: 50px;
 }
 main .conteudo a{
-     display: block;
+    
     color:rgb(255, 255, 255);
     background-color:#FB235E;
     font-weight: bold;
@@ -84,70 +111,53 @@ main .conteudo a{
     position: relative;
     bottom: 20px;
     text-decoration: none;
-    
     font-size: 18px;
-    
-   
-   
 }
 
 main .produto{
-        flex: 2;
+    max-width: 450px;
+        flex: 1;
         
 }
 main .produto img{
     width: 100%;
-    
-   
+    min-width: 440px;
+    max-width: 444px;
    
 }
-main .produto p{
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 20px;
-    color:#ffd700;
-}
+
 main .funcao{
-    position: relative;
-    top: 20px;
-    justify-items: center;
+    min-width: 330px;
+    display: flex;
+   justify-content: center;
     flex-wrap: wrap;
     color:#7CBE50;
-    border: 2px solid #3C3C3C;
+
     flex: 1;
     
 }
+main .funcao div{ 
+    max-width: 60px;
+    margin: 30px;
+   }
 main .funcao img{
-   width: 80px;
-   margin: 30px;
+    max-width :60px;
   
 }
-main .funcao h1 {
-    
-    font-size: 2.5em;
-    text-align: center;
-}
-main .icon{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    
-}
+
+
 section{
     display: flex;
-    background-color: rgb(0, 0, 0);
     padding: 20px;
-    height: 300px;
     color: white;
+    background-image:url('/img/551467.png') ;
+    background-size: cover;
 }
 section div{
     display: flex;
     flex-direction: column;
     flex: 1;
     text-align:center;
-    background-image:url('/img/17580.jpg') ;
     background-size: cover;
     margin: 20px;
     border-radius: 10px;
@@ -155,19 +165,61 @@ section div{
     justify-items: center;
 }
 section div h1{
-    color: #131212;
+    color: #9c8f8f;
+    font-size: 1.2em;
 }
 section div p{
     margin-top: 40px;
-    color:#3C3C3C;
-    font-size: 1.5em;
+    color:#979696;
+    font-size: 1em;
     text-align: center;
 }
 
 footer{
     
-    background-color: rgb(0, 0, 0);
+    background-color: #1E1E1E;
     color:white;
     text-align: center;
     padding: 8px;
+}
+
+
+@media(max-width:838px){
+    body{
+        font-size: 16px;
+    }
+    main{
+        flex-direction: column;
+        
+    }
+    main div{
+        
+    }
+}
+@media(max-width:785px){
+    header{
+        align-items: center;
+       
+    }
+    header .han{
+        display: flex;
+    flex-direction: column;
+    justify-content: left;
+    cursor: pointer;
+    }
+    header .logo{
+        margin: auto;
+        
+       
+    }
+    header nav {
+        display: none;
+    }
+
+
+}
+@media (max-width:400px){
+    body{
+        font-size: 14px;
+    }
 }
