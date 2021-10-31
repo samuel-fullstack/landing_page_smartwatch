@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 *{
  margin: 0px;
+ padding: 0px;
 }
 
 body{
@@ -15,6 +16,9 @@ h1{
 }
 
 header{
+    
+    height: 8vh;
+    width: 100%;
     display: flex;
     padding: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.431) ;
@@ -22,6 +26,7 @@ header{
     box-shadow: -2px 3px 8px rgba(0, 0, 0, 0.349);
     
 }
+
 header .han{ 
     
     display:none
@@ -33,6 +38,41 @@ header .han>div{
     margin: 3px;
     
     border-radius: 5px;
+}
+header #content-menu { 
+    display: flex;
+
+  
+}
+header #menu-escondido{
+    
+    position: absolute;
+    top: 11.3vh;
+    left:0;
+    display:flex;
+    justify-content:space-around ;
+    flex-direction: column;
+    background-color: #7CBE50;
+    height: 100vh;
+    width:0px;
+    background-color: #d1d0d0;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s ease-out;
+}
+header #menu-escondido a {
+
+    transition: 0.4s ;
+
+    padding: 10px;
+    font-size: 0.8em;
+    color: rgb(10, 8, 8);
+    text-decoration: none;
+    
+    
+}
+header #menu-escondido a:hover{
+    background-color: rgba(255, 255, 255, 0.993);
 }
 header img{
     width: 40px;
@@ -108,10 +148,14 @@ main .conteudo a{
     font-weight: bold;
     padding: 15px;
     width: 300px;
-    position: relative;
+   
+    
     bottom: 20px;
     text-decoration: none;
     font-size: 18px;
+}
+main .conteudo a:hover{
+    opacity: 0.7;
 }
 
 main .produto{
@@ -144,7 +188,6 @@ main .funcao img{
     max-width :60px;
   
 }
-
 
 section{
     display: flex;
